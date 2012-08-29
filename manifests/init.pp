@@ -6,9 +6,6 @@ class nodejs ( $version, $logoutput = 'on_failure' ) {
   package { 'libssl-dev':
     ensure => present,
   }
-  package { 'build-essential':
-    ensure => present,
-  }
 
   # use nave, yo
   exec { 'nave' :
